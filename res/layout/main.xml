@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+
+	    <fragment
+	        android:id="@+id/gallery_fragment"
+	        android:name="com.leoz.bz.zgallery.CtlGalleryFragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="895"
+	        android:background="#FF808080" >
+	    </fragment>
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="5"
+	        android:background="#FF808080" >
+	    </Button>
+	    	    	    	    
+		<fragment
+	        android:id="@+id/ctlgrid_fragment"
+	        android:name="com.leoz.bz.zgrid.CtlGridFragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="100"
+	        android:background="#FF808080" >
+	    </fragment>
+	    
+	</LinearLayout>
+
+</FrameLayout>
